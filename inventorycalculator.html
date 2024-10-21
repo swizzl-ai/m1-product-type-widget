@@ -85,15 +85,10 @@
             <div class="widget-header">Select a Product Category</div>
             <select class="widget-dropdown" id="categoryDropdown">
                 <option value="" disabled selected>Select a category</option>
-                <option value="Adult products">Adult products</option>
-                <option value="Art and museum merchandise">Art and museum merchandise</option>
                 <option value="Bicycles and accessories">Bicycles and accessories</option>
-                <option value="Candy and confectionery">Candy and confectionery</option>
-                <option value="Cannabis products">Cannabis products</option>
                 <option value="College textbooks and supplies">College textbooks and supplies</option>
                 <option value="Contemporary fashion clothing">Contemporary fashion clothing</option>
                 <option value="Elevated streetwear">Elevated streetwear</option>
-                <option value="Farm and feed supplies">Farm and feed supplies</option>
                 <option value="Fast-fashion clothing">Fast-fashion clothing</option>
                 <option value="Fashion jewelry">Fashion jewelry</option>
                 <option value="Footwear">Footwear</option>
@@ -102,7 +97,7 @@
                 <option value="Gifts, stationery, and home accessories">Gifts, stationery, and home accessories</option>
                 <option value="Golf equipment and apparel">Golf equipment and apparel</option>
                 <option value="Hardware and tools">Hardware and tools</option>
-                <option value="Horse supplies and equipment">Horse supplies and equipment</option>
+                <option value="Ranch supplies and equipment">Ranch supplies and equipment</option>
                 <option value="Kids' clothing and maternity wear">Kids' clothing and maternity wear</option>
                 <option value="Kitchen supplies and appliances">Kitchen supplies and appliances</option>
                 <option value="Lingerie and intimate apparel">Lingerie and intimate apparel</option>
@@ -113,9 +108,7 @@
                 <option value="Quilting and fabric materials">Quilting and fabric materials</option>
                 <option value="Sporting goods and equipment">Sporting goods and equipment</option>
                 <option value="Surf, skate, ski, and snowboard gear">Surf, skate, ski, and snowboard gear</option>
-                <option value="Tobacco products">Tobacco products</option>
                 <option value="Toys and hobby supplies">Toys and hobby supplies</option>
-                <option value="Uniforms and work wear">Uniforms and work wear</option>
                 <option value="Western wear and accessories">Western wear and accessories</option>
             </select>
         </div>
@@ -130,15 +123,10 @@
 
     <script>
         const data = {
-            "Adult products": { turns: "2-3x", description: "These products have moderate demand, meaning retailers restock a few times per year." },
-            "Art and museum merchandise": { turns: "1-2x", description: "Lower turnover reflects the niche market for these items, resulting in slower inventory movement." },
             "Bicycles and accessories": { turns: "1-2x", description: "Demand fluctuates with the season, causing retailers to stock strategically." },
-            "Candy and confectionery": { turns: "12-15x", description: "Perishable goods like candy have high turnover rates due to their short shelf life and consistent demand." },
-            "Cannabis products": { turns: "6-10x", description: "High demand and legal restrictions keep inventory moving quickly for these products." },
             "College textbooks and supplies": { turns: "2-3x", description: "Textbooks have slow turns due to cyclical demand based on school semesters." },
             "Contemporary fashion clothing": { turns: "2-3x", description: "Contemporary fashion moves moderately as trends shift over the seasons." },
             "Elevated streetwear": { turns: "3-4x", description: "Streetwear brands rely on limited releases and seasonal trends, keeping inventory moving." },
-            "Farm and feed supplies": { turns: "3-5x", description: "Farm and feed supplies are subject to seasonal demand, with steady turnover." },
             "Fast-fashion clothing": { turns: "8-12x", description: "Fast-fashion thrives on constantly refreshing styles, leading to frequent inventory turns." },
             "Fashion jewelry": { turns: "1-2x", description: "Jewelry has steady demand, though it can be more of a luxury item." },
             "Footwear": { turns: "2x", description: "Footwear needs frequent restocking, especially for popular brands and sizes." },
@@ -147,7 +135,7 @@
             "Gifts, stationery, and home accessories": { turns: "2-3x", description: "These items are popular for gifting but have steady, not high, turnover." },
             "Golf equipment and apparel": { turns: "1-2x", description: "Golf equipment appeals to a niche market, leading to lower annual turnover." },
             "Hardware and tools": { turns: "1-2x", description: "Hardware is essential and frequently used, leading to slower turnover rates." },
-            "Horse supplies and equipment": { turns: "1-2x", description: "Horse supplies appeal to a specialized audience, causing slower turnover." },
+            "Ranch supplies and equipment": { turns: "3-5x", description: "Ranch supplies are subject to seasonal demand, with steady turnover." },
             "Kids' clothing and maternity wear": { turns: "2-3x", description: "Kids grow quickly, requiring frequent clothing purchases and higher turnover." },
             "Kitchen supplies and appliances": { turns: "2-3x", description: "Kitchen supplies experience moderate demand with regular restocking." },
             "Lingerie and intimate apparel": { turns: "1-2x", description: "Lingerie maintains consistent but moderate demand throughout the year." },
@@ -158,9 +146,7 @@
             "Quilting and fabric materials": { turns: "1-2x", description: "Fabric materials move slowly due to their niche market and long project timelines." },
             "Sporting goods and equipment": { turns: "2-3x", description: "Sporting goods vary by season but generally move at a steady rate." },
             "Surf, skate, ski, and snowboard gear": { turns: "2-3x", description: "Seasonal variations affect the turnover of surf, skate, ski, and snowboard gear, with demand peaking at different times of the year." },
-            "Tobacco products": { turns: "2-3x", description: "Frequent purchases and consistent demand drive tobacco products' turnover." },
             "Toys and hobby supplies": { turns: "3-4x", description: "Toys and hobbies are steady sellers but typically have peaks during holidays, which drives moderate turnover." },
-            "Uniforms and work wear": { turns: "3-4x", description: "Uniforms and work wear see consistent but moderate turnover throughout the year, driven by occupational needs." },
             "Western wear and accessories": { turns: "1-2x", description: "Western wear has steady demand but a smaller, niche market, resulting in slower turnover." }
         };
 
