@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Proxima Nova', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .custom-widget-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+            display: flex;
+            gap: 20px;
+            align-items: stretch;
+        }
+
+        .custom-content-section {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .custom-content-section.highlighted {
+            background-color: rgb(244, 239, 245);
+        }
+
+        .custom-details summary {
+            font-size: 18px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            color: #2b2b2b;
+        }
+
+        .custom-content-section p {
+            font-size: 16px;
+            color: #666;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .custom-content-section ul {
+            text-align: left;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .custom-content-section li {
+            margin-bottom: 10px;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            .custom-widget-container {
+                flex-direction: column;
+            }
+
+            .custom-content-section {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-widget-container">
+        <div class="custom-content-section">
+            <h3>POS + Excel</h3>
+            <p>Uses basic POS data combined with Excel spreadsheets to manage inventory</p>
+            <details class="custom-details">
+                <summary>How It Helps ▶</summary>
+                <ul>
+                    <li>Provides visibility to inventory without needing specialized software</li>
+                    <li>Simple and inexpensive solution for managing inventory basics</li>
+                </ul>
+            </details>
+            <details class="custom-details">
+                <summary>When It Doesn't Help ▶</summary>
+                <ul>
+                    <li>Lack of automation makes it error-prone</li>
+                    <li>Difficult to scale for anything over $200k</li>
+                </ul>
+            </details>
+        </div>
+        <div class="custom-content-section highlighted">
+            <h3>Inventory Planning (what we offer)</h3>
+            <p>Software that helps forecast inventory needs based on historical sales data and trends</p>
+            <details class="custom-details">
+                <summary>How It Helps ▶</summary>
+                <ul>
+                    <li>Identifying stock issues before they become issues</li>
+                    <li>Reducing time spent digging through data manually</li>
+                    <li>Taking confident markdowns</li>
+                </ul>
+            </details>
+            <details class="custom-details">
+                <summary>When It Doesn't Help ▶</summary>
+                <ul>
+                    <li>For new retailers without adequate data history</li>
+                    <li>Stores too small (below $200k annual revenue)</li>
+                </ul>
+            </details>
+        </div>
+        <div class="custom-content-section">
+            <h3>Min-Max</h3>
+            <p>Simple system setting minimum and maximum inventory levels</p>
+            <details class="custom-details">
+                <summary>How It Helps ▶</summary>
+                <ul>
+                    <li>Managing replenishment for predictable, low-complexity inventory needs</li>
+                    <li>Quick, simple methods to prevent stockouts</li>
+                </ul>
+            </details>
+            <details class="custom-details">
+                <summary>When It Doesn't Help ▶</summary>
+                <ul>
+                    <li>For high-variety, high-complexity inventory needs</li>
+                    <li>Cannot adjust for trends or unique demand patterns</li>
+                </ul>
+            </details>
+        </div>
+        <div class="custom-content-section">
+            <h3>Assortment Planning</h3>
+            <p>Optimizes product mix based on demand, trends, and sales goals</p>
+            <details class="custom-details">
+                <summary>How It Helps ▶</summary>
+                <ul>
+                    <li>When deciding what products to carry in a store</li>
+                    <li>Determining the best assortment to maximize sales and meet customer demand</li>
+                </ul>
+            </details>
+            <details class="custom-details">
+                <summary>When It Doesn't Help ▶</summary>
+                <ul>
+                    <li>Lacks day-to-day inventory visibility</li>
+                    <li>Not ideal for managing detailed stock levels or reordering needs</li>
+                </ul>
+            </details>
+        </div>
+    </div>
+</body>
+</html>

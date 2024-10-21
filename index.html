@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Proxima Nova', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .widget-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+            display: flex;
+            gap: 20px;
+            align-items: stretch; /* Ensures all boxes have the same height */
+        }
+
+        .content-section {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content-section.highlighted {
+            background-color: rgb(244, 239, 245);
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #2b2b2b;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #2b2b2b;
+        }
+
+        ul {
+            text-align: left;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            .widget-container {
+                flex-direction: column;
+            }
+
+            .content-section {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="widget-container">
+        <div class="content-section highlighted">
+            <h3>Inventory Planning (what we offer)</h3>
+            <p>Software that helps forecast inventory needs based on historical sales data and trends</p>
+            <h4>✅ How It Helps</h4>
+            <ul>
+                <li>Identifying stock issues before they become issues</li>
+                <li>Reducing time spent digging through data manually</li>
+                <li>Taking confident markdowns</li>
+            </ul>
+            <h4>❌ When It Doesn't Help</h4>
+            <ul>
+                <li>For new retailers without adequate data history</li>
+                <li>Stores too small (below $200k annual revenue)</li>
+            </ul>
+        </div>
+        <div class="content-section">
+            <h3>Min-Max</h3>
+            <p>Simple system setting minimum and maximum inventory levels</p>
+            <h4>✅ How It Helps</h4>
+            <ul>
+                <li>Managing replenishment for predictable, low-complexity inventory needs</li>
+                <li>Quick, simple methods to prevent stockouts</li>
+            </ul>
+            <h4>❌ When It Doesn't Help</h4>
+            <ul>
+                <li>For high-variety, high-complexity inventory needs</li>
+                <li>Cannot adjust for trends or unique demand patterns</li>
+            </ul>
+        </div>
+        <div class="content-section">
+            <h3>POS + Excel</h3>
+            <p>Uses basic POS data combined with Excel spreadsheets to manage inventory</p>
+            <h4>✅ How It Helps</h4>
+            <ul>
+                <li>Provides visibility to inventory without needing specialized software</li>
+                <li>Simple and inexpensive solution for managing inventory basics</li>
+            </ul>
+            <h4>❌ When It Doesn't Help</h4>
+            <ul>
+                <li>Lack of automation makes it error-prone</li>
+                <li>Difficult to scale for anything over $200k</li>
+            </ul>
+        </div>
+        <div class="content-section">
+            <h3>Assortment Planning</h3>
+            <p>Optimizes product mix based on demand, trends, and sales goals</p>
+            <h4>✅ How It Helps</h4>
+            <ul>
+                <li>When deciding what products to carry in a store</li>
+                <li>Determining the best assortment to maximize sales and meet customer demand</li>
+            </ul>
+            <h4>❌ When It Doesn't Help</h4>
+            <ul>
+                <li>Lacks day-to-day inventory visibility</li>
+                <li>Not ideal for managing detailed stock levels or reordering needs</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
