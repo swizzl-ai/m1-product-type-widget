@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .email-container {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .hero-container {
+      width: 100%;
+      max-width: 600px;
+      height: auto; /* Allows the image to keep its aspect ratio */
+      overflow: hidden; /* Crop sides as the screen narrows */
+    }
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Crop sides of the image on narrow screens */
+    }
+    .content {
+      font-size: 18px; /* Increased font size */
+      line-height: 1.6;
+      margin: 20px 0;
+      text-align: left; /* Left-align the body text */
+      box-sizing: border-box;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 12px 24px; /* Increased button size */
+      background-color: #007bff;
+      color: #ffffff !important; /* Ensure button text is white */
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px; /* Increase button text size */
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="hero-container">
+      <img src="carsemailhero.png" alt="Hero Image" class="hero-image">
+    </div>
+    <div class="content">
+      Hi Jonathan,
+      <br><br>
+      Want to see if the Acura MDX Advance Package is right for you? Let's get started with a short survey.
+    </div>
+    <a href="https://cars.swizzl.ai/?airtableid=1004Jo87" class="cta-button">Start Survey</a>
+  </div>
+</body>
+</html>
